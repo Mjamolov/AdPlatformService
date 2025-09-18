@@ -4,9 +4,6 @@ using AdPlatformService.Services;
 
 namespace AdPlatformService.Controllers
 {
-    /// <summary>
-    /// Контроллер для работы с рекламными площадками
-    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class AdPlatformController : ControllerBase
@@ -96,7 +93,7 @@ namespace AdPlatformService.Controllers
         /// <summary>
         /// В зависимости от загруженного файла ищет данные в соответсвии с параметром
         /// </summary>
-        /// <param name="location">Локация для поиска (например: /ru/msk)</param>
+        /// <param name="location">Локация для поиска</param>
         /// <returns>Список подходящих плащадок</returns>
         [HttpGet("search")]
         [ProducesResponseType(typeof(SearchResponse), StatusCodes.Status200OK)]
